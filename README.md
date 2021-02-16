@@ -1,19 +1,18 @@
-## Simple State Machine
-#### by Scott Kildall
+## MoodStates
+#### by Jingyi Zhao
 
 
 ### Overview
-This is a template for a simple state machine that goes between five states
+This is a template for a simple state machine that goes between four states
 
 
 ### Modifying the Template
 
-(1) Add your own PNG files in the assets folder. Make sure they match the names ***exactly*** of the existing PNGs.
 
-(2) Add custom drawing code to drawOne(), drawTwo(), drawThree(), drawFour(), drawFive()
+ Add custom drawing code to drawOne(), drawTwo(), drawThree(), drawFour()
 
-(3) You can add your own interfaces - keys, mouse events, etc in the Interfaces section
+ You can add your own interfaces - keys, mouse events, etc in the Interfaces section
 
 Don't change anything else! 
 
-### How it works
+### It is interest work...
