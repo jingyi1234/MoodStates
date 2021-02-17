@@ -41,10 +41,10 @@ var gTextOffset = 20;
 
 // load all images into an array
 function preload() {
-  images[0] = loadImage('assets/s.jpg');
-  images[1] = loadImage('assets/t.jpg');
-  images[2] = loadImage('assets/F.jpg');
-  images[3] = loadImage('assets/forth.jpg');
+  images[0] = loadImage('assets/allday.png');
+  images[1] = loadImage('assets/sleep.png');
+  images[2] = loadImage('assets/eat.png');
+  images[3] = loadImage('assets/goout.jpg');
   
 }
 
