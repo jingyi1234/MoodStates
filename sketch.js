@@ -44,7 +44,7 @@ function preload() {
   images[0] = loadImage('assets/allday.png');
   images[1] = loadImage('assets/sleep.png');
   images[2] = loadImage('assets/eat.png');
-  images[3] = loadImage('assets/goout.jpg');
+  images[3] = loadImage('assets/goout.png');
   
 }
 
