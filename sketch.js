@@ -45,13 +45,11 @@ function preload() {
   images[1] = loadImage('assets/sleep.png');
   images[2] = loadImage('assets/eat.png');
   images[3] = loadImage('assets/goout.png');
+  images[4] = loadImage('assets/splash.png');
   
 }
 
-//
-function setup(){
-  createCanvas(480,120);
-}
+
 // Center drawing, drawFunction will be one for default
 function setup() {
   createCanvas(1200,800);
@@ -62,7 +60,7 @@ function setup() {
   textSize(24);
 
   // set to one for startup
-  drawFunction = drawOne;
+  drawFunction = drawSplash;
 }
 
 function draw() {
@@ -73,6 +71,7 @@ function draw() {
   // will call your state machine function
   drawFunction();
 }
+
 
 //-- drawOne() will draw the image at index 0 from the array
 drawOne = function() {
@@ -110,9 +109,19 @@ drawFour = function() {
    text("I like to go out....", 5,250,500,500);
 }
 
+//
+drawSplash = function() {
+   image(images[4],500,500,800,300);
+   fill(255,165,0);
+   text("Happy orange", 300,100,300,300);
+   textSize(50);
 
+   }
 // Change the drawFunction variable based on your interaction
 function keyTyped() {
+  if ( key === drawSplash){
+    return;
+  }
   if( key === '1' ) {
   	drawFunction = drawOne;
   }
@@ -125,5 +134,13 @@ function keyTyped() {
   else if( key === '4' ) {
   	drawFunction = drawFour;
   }
-  
+  else if ( key === 's'){
+    drawFunction = drawSplash;
+  }
+}
+
+function mousePressed(){
+  if ( drawFunction == drawSplash){
+    drawFunction = drawOne;
+  }
 }
